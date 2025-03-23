@@ -117,15 +117,22 @@
     </div>
 
         <!-- Sidebar -->
-    <div class="sidebar">
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="#"><i class="fa-solid fa-calendar-check"></i> Appointment</a></li>
-            <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> Session</a></li>
-            <li><a href="#"><i class="fa-solid fa-user"></i> Account</a></li>
-            <li class="mt-5"><a href="{{ route('logout') }}"><i class="fa-solid fa-right-from-bracket"></i> Sign Out</a></li>
-        </ul>
-    </div>
+        <div class="sidebar">
+            <ul>
+                <li><a href="{{ route('dashboard') }}"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="{{ route('appointments.index') }}"><i class="fa-solid fa-calendar-check"></i> Appointment</a></li>
+                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i> Session</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Account</a></li>
+                <li class="sidebar-item">
+                    <form method="POST" action="{{ route('logout') }}" style="display: flex; align-items: center;">
+                        @csrf
+                        <button type="submit" class="sidebar-link" style="border: none; background: none; color: white; display: flex; align-items: center; width: 100%; text-align: left;">
+                            <i class="fa-solid fa-right-from-bracket" style="margin-right: 10px;"></i> Sign Out
+                        </button>
+                    </form>
+                </li>        
+            </ul>
+        </div>
 
     <!-- Main Content -->
     <div class="content">

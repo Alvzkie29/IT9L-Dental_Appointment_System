@@ -15,8 +15,9 @@
         }
 
         .login-container {
-            width: 350px;
-            padding: 20px;
+            width: 400px;
+            height: 350px;
+            padding-top: 80px;
             border: 1px solid #000;
             border-radius: 5px;
             background-color: white;
@@ -27,13 +28,14 @@
         .login-container label {
             display: block;
             text-align: left;
-            margin-left: 2%;
+            margin-left: 23%;
             font-weight: bold;
+            padding-top: 10px;
         }
 
         /* Style inputs */
         .login-container input {
-            width: 90%;
+            width: 50%;
             padding: 10px;
             margin: 5px auto;
             border: 1px solid #000;

@@ -15,7 +15,8 @@
         }
 
         .register-container {
-            width: 350px;
+            width: 500px;
+            height: 600px;
             padding: 20px;
             border: 1px solid #000;
             border-radius: 5px;
@@ -27,13 +28,14 @@
         .register-container label {
             display: block;
             text-align: left;
-            margin-left: 2%;
+            margin-left: 18%;
             font-weight: bold;
+            padding-top: 20px;
         }
 
         /* Style inputs */
         .register-container input {
-            width: 90%;
+            width: 60%;
             padding: 10px;
             margin: 5px auto;
             border: 1px solid #000;
@@ -54,7 +56,7 @@
 
         .register-container a {
             display: block;
-            margin-top: 10px;
+            margin-top: 15px;
             text-decoration: none;
             font-weight: bold;
         }
@@ -82,7 +84,7 @@
 
             <button type="submit">Register</button>
         </form>
-        <a href="{{ route('login') }}">Already have an account?<strong>Sign-in</strong></a>
+        <a href="{{ route('login') }}">Already have an account?<strong> Sign-in</strong></a>
     </div>
 </body>
 </html>
